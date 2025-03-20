@@ -1,3 +1,7 @@
+import { structuredClonePolyfill } from "@keycloak/keycloak-ui-shared/src/utils/structuredClonePolyfill";
+
+structuredClonePolyfill();
+
 const ERROR_FIELDS = ["error", "errorMessage"];
 
 export type NetworkErrorOptions = { response: Response; responseData: unknown };

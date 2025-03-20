@@ -1,3 +1,7 @@
+import { structuredClonePolyfill } from "../utils/structuredClonePolyfill";
+
+structuredClonePolyfill();
+
 /** The base environment variables that are shared between the Admin and Account Consoles. */
 export type BaseEnvironment = {
   /**

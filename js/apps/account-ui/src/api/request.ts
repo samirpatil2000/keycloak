@@ -6,6 +6,9 @@ import Keycloak from "keycloak-js";
 
 import { joinPath } from "../utils/joinPath";
 import { CONTENT_TYPE_HEADER, CONTENT_TYPE_JSON } from "./constants";
+import { structuredClonePolyfill } from "@keycloak/keycloak-ui-shared/src/utils/structuredClonePolyfill";
+
+structuredClonePolyfill();
 
 export type RequestOptions = {
   signal?: AbortSignal;
