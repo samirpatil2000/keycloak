@@ -76,6 +76,9 @@ import { getProtocolName, isRealmClient } from "./utils";
 import { UserEvents } from "../events/UserEvents";
 import { useIsAdminPermissionsClient } from "../utils/useIsAdminPermissionsClient";
 import { AdminEvents } from "../events/AdminEvents";
+import { structuredClonePolyfill } from "@keycloak/keycloak-ui-shared/src/utils/structuredClonePolyfill";
+
+structuredClonePolyfill();
 
 type ClientDetailHeaderProps = {
   onChange: (value: boolean) => void;
